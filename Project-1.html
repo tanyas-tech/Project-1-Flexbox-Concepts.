@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/html/project1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="./Project-1_files/project1.css">
+</head>
+<body>
+    <h1>All Flexbox Concepts - Basic HTML Demo</h1>
+    <section class="section">
+        <h2>1. Display: Flex</h2>
+        <p>This enables Flexbox layout on a container.</p>
+        <section class="flexcontainer1">
+            <div class="flexitems1">Item 1</div>
+            <div class="flexitems1">Item 2</div>
+            <div class="flexitems1">Item 3</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>2. Flex Direction</h2>
+        <p>Direction of the main axis(row by default).</p>
+        <section class="flexcontainer2">
+            <div class="flexitems2">Column 1</div>
+            <div class="flexitems2">Column 2</div>
+            <div class="flexitems2">Column 3</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>3. Justify Content</h2>
+        <p>Controls alignment along the main axis(horizontal is flex-direction is row).</p>
+        <section class="flexcontainer3-1">
+            <div class="flexitems3-1">Center</div>
+            <div class="flexitems3-1">Aligned</div>
+        </section>
+        <section class="flexcontainer3-2">
+            <div class="flexitems3-2">Start</div>
+            <div class="flexitems3-2">End</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>4. Align Items</h2>
+        <p>Controls alignment along the cross axis(vertical if flex-direction is row).</p>
+        <section class="flexcontainer4">
+            <div class="flexitems4-1">Top</div>
+            <div class="flexitems4-2">Tall</div>
+            <div class="flexitems4-3">Short</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>5. Flex Wrap</h2>
+        <p>Allows items to wrap into multiple lines.</p>
+        <section class="flexcontainer5">
+            <div class="flexitems5">Box 1</div>
+            <div class="flexitems5">Box 2</div>
+            <div class="flexitems5">Box 3</div>
+            <div class="flexitems5">Box 4</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>6. Gap</h2>
+        <p>Space between items (row and column gap).</p>
+        <section class="flexcontainer6">
+            <div class="flexitems6">A</div>
+            <div class="flexitems6">B</div>
+            <div class="flexitems6">C</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>7. Flex Grow</h2>
+        <p>Defines how much a flex item will grow relative to the others.</p>
+        <section class="flexcontainer7">
+            <div class="flexitems7-1">Grow 1</div>
+            <div class="flexitems7-2">Grow 2</div>
+            <div class="flexitems7-3">No Grow</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>8. Flex Shrink</h2>
+        <p>Defines how a flex item will shrink if necessary.</p>
+        <section class="flexcontainer8">
+            <div class="flexitems8-1">Shrink</div>
+            <div class="flexitems8-2">No Shrink</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>9. Flex Basis</h2>
+        <p>Sets the initial size of a flex item before space is distributed.</p>
+        <section class="flexcontainer9">
+            <div class="flexitems9-1">150px Basis</div>
+            <div class="flexitems9-2">Auto</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>10. Order</h2>
+        <p>Controls the order in which items appear(visually).</p>
+        <section class="flexcontainer10">
+            <div class="flexitems10-1">Default</div>
+            <div class="flexitems10-2">Order 1</div>
+            <div class="flexitems10-3">Order 2</div>
+        </section>
+    </section>
+    <section class="section">
+        <h2>11. Align Self</h2>
+        <p>Overrides align-items for individual items.</p>
+        <section class="flexcontainer11">
+            <div class="flexitems11-1">Top</div>
+            <div class="flexitems11-2">Center</div>
+            <div class="flexitems11-3">Bottom</div>
+        </section>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
